@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simple Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+        table, th, td {
+  border: 1px solid black;
+}</style>
+    </head>
+    <body>
+        <table style="width:50%;">
+    <tr>
+    <th id='write' colspan="4">0</th>
+    </tr>
+    <tr>
+    <th colspan="4">0</th>
+    </tr>
+  <tr>
+  <td><button id='7' style='width:100%' value='7' onclick='btn7()'>7</button></td>
+  <td><button id='8' style='width:100%' onclick='btn8()'>8</button></td>
+  <td><button id='9' style='width:100%' onclick='btn9()'>9</button></td>
+  <td><button id='del' style='width:100%' onclick='btnDEL()'>DEL</button></td>
+  </tr>
+   <tr>
+  <td><button id='4' style='width:100%' onclick='btn4()'>4</button></td>
+  <td><button id='5' style='width:100%' onclick='btn5()'>5</button></td>
+  <td><button id='6' style='width:100%' onclick='btn6()'>6</button></td>
+  <td><button id='divi' style='width:100%' onclick='btndivi()'>/</button></td>
+  </tr>
+   <tr>
+  <td><button id='1' style='width:100%' onclick='btn1()'>1</button></td>
+  <td><button id='2' style='width:100%' onclick='btn2()'>2</button></td>
+  <td><button id='3' style='width:100%' onclick='btn3()'>3</button></td>
+  <td><button id='sub' style='width:100%' onclick='btnsub()'>-</button></td>
+  </tr>
+   <tr>
+  <td><button id='0' style='width:100%' onclick='btn0()'>0</button></td>
+  <td><button id='dot' style='width:100%' onclick='btndot()'>.</button></td>
+  <td><button id='equal' style='width:100%' onclick='btnequal()'>=</button></td>
+  <td><button id='add' style='width:100%' onclick='btnadd()'>+</button></td>
+  </tr>
+
+</table>
+        <script src="scalc.js" async defer></script>
+    </body>
+</html>

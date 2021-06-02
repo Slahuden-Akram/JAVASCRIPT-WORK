@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<script src = 'Cform.js'></script>
+</head>
+<body>
+	<form name="myForm" onsubmit="return validation()">
+		<label for="name">Name:	</label>
+		<input style="margin-left: 80px" id="name" placeholder="Enter Name (Only Aphabets)" required onkeyup="letteronly(this)" /><br><span style="color: red; margin-left: 125px;" id = "alpmessage"></span><br><br>
+
+
+		<label for="contact">Enter Contact:	</label>
+		<input style="margin-left: 30px" id="contact" placeholder="Enter Contact (Only Numbers)" required onkeyup="numberonly(this)"><br><span style="color: red; margin-left: 125px;" id = "nummessage"></span><br><br>
+
+
+		<label for="email">Enter Email:	</label>
+		<input style="margin-left: 42px" id="email" placeholder="Enter Email ie: abc@xyz.com" required onkeyup=''><br><span style="color: red; margin-left: 125px;" id = "Message"></span><br><br>
+
+
+		<label for="rollno">Enter RollNumber:	</label>
+		<input id="rollno" placeholder="Enter RollNumber (bcs-M-A-22600" required onkeyup="mask(this)"><br><span style="color: red; margin-left: 125px;" id= "Warning"></span><br><br>
+
+
+		<label for="cnic">Enter CNIC:	</label>
+		<input style="margin-left:42px;" id="cnic" placeholder="Enter CNIC (35503-0164122-5)" onkeyup="makemask(this)"><br><br>
+
+		<input type="submit" value="submit">
+
+
+	</form>
+</body>
+</html>

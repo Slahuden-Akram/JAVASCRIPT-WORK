@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CNIC</title>
+	<script src="cnicjs.js"></script>
+</head>
+<body>
+	<form name='myForm' onsubmit="return cnicvalidate()">
+	<input id='cnic' name='cnic' minlength='8' placeholder='Enter CNIC' onkeyup="numberonly(this)" onclick="mask(this)">
+	<input type='submit' value='Submit'>
+	
+</form>
+</body>
+</html>

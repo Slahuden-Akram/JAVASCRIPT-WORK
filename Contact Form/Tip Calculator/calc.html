@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tip Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    Amount: <input type='text' id='amount' placeholder='Enter Total Amount'> <br><br><br>
+    Service:  <select name="status" id="status">
+   <option value="">--Select--</option> 
+  <option value="fine">Fine</option>
+  <option value="good">Good</option>
+  <option value="excellent">Excellent</option>
+</select><br><br><br>
+Persons Sharing this: <input type='text' id='num' placeholder='Enter Persons'> <br><br><br>
+<button onclick='billcalculator()'>Calculate bill</button>
+<button onclick='tipcalc()'>Calculate tip</button>
+<p id='one'>Here will be the calculated bill for Each:</p>
+<p id='two'>Here will be the calculated tip:</p>
+        <script src="calc.js" async defer></script>
+    </body>
+</html>
